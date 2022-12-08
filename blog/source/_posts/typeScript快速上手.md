@@ -4,11 +4,14 @@ date: 2022-12-06
 updated: 2022-12-06
 tags: 前端
 categories: 学习
+keywords: ts
 description: typeScript快速上手
-top_img: ./photo/20221206_ts.jpg
+top_img: https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20221206_ts.jpg
+comments: 上手
+cover: https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20221206_ts.jpg
 ---
 # 初识 TypeScript
-![图例](./photo/20221206_ts.jpg)
+![图例](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/20221206_ts.jpg)
 ## TypeScript 的介绍
 TypeScript是一种由微软开发的开源、跨平台的编程语言。它是JavaScript的超集，最终会被编译为JavaScript代码。
 
