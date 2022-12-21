@@ -565,9 +565,9 @@ export default {
 ```
 ## 生命周期
 ### vue2
-![图例](./photo/vue2lifecycle.png)
+![图例](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/vue2lifecycle.png)
 ### vue3
-![图例](./photo/vue3life.jpeg)
+![图例](https://cdn.jsdelivr.net/gh/urmax/cdn/blog/source/_posts/photo/vue3life.jpeg)
 vue3中可以继续使用vue2.x中的生命周期钩子，但是有两个被改名：
 beforeDestroy改名为beforeUnmount
 destroyed改名为unmounted
@@ -962,6 +962,7 @@ createApp(App).use(store).use(router).mount('#app')
 |unmount（卸载）|在提供的 DOM 元素上卸载应用实例的根组件。|
 
 ### defineAsyncComponent()
+异步组件
 ```vue
 <template>
   <div>
@@ -969,18 +970,15 @@ createApp(App).use(store).use(router).mount('#app')
     <component :is="currentTab"></component>
   </div>
 </template>
-<script lang="ts">
+```
+```ts
 import { ref, defineAsyncComponent } from 'vue'
- 
- 
 const AsyncComp1 = defineAsyncComponent(() =>
   import('./components/MyComponent1.vue')
 )
 const AsyncComp2 = defineAsyncComponent(() =>
   import('./components/MyComponent2.vue')
 )
- 
- 
 export default {
   components: {
     AsyncComp1,
@@ -998,16 +996,10 @@ export default {
       change
   }
 }
-</script>
 ```
+
 ### nextTick()
-## 将原来的全局 `API` 转移到应用对象
-    app.component()
-    app.config()
-    app.directive()
-    app.mount()
-    app.unmount()
-    app.use()
+等待下一次 DOM 更新刷新的工具方法
 ## 模板语法变化
     v-model的本质变化
     prop：value -> modelValue；
